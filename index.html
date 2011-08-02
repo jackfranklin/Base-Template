@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!--
+	Fancy IE detection. Avoid lots of extra IE specific stylesheets, Modernizr removes the "no-js" class if JS is around.
+-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	
+	<!--this forces the latest IE rendering engine or Chrome Frame if it's there-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Page Title Here</title>
+	
+	<!--meta tags-->
+	<meta name="description" content="">
+  	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;"> 
+	
+	
+	<!--grabs the favicon from the root-->
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!--main css file-->
+	<link rel="stylesheet" href="style.css" />
+	<!--pretty forms, comes with a JS file too of same name
+		find out more
+		http://formalize.me/
+	-->
+	<link rel="stylesheet" href="lib/css/formalize.css" />
+	<!--
+		more than a CSS reset https://github.com/necolas/normalize.css
+	-->
+	<link rel="stylesheet" href="lib/css/normalize.css" />
+	<!--
+		modernizr has to be loaded here to run before everything else
+		it will feature detect for you and also makes sure HTML5 elements play nice
+		in older IEs
+		PLEASE NOTE: The modernizr script included is a custom build with EVERYTHING included
+		You probably don't need everything, so go here and build your own:
+		http://www.modernizr.com/download/
+	-->
+	<script src="lib/js/modernizr.min.js"></script>
+	<!--
+		all other JS loaded at the bottom
+		this way loading them doesn't hold up the loading of the entire page
+	-->
+	
+	
+</head>
+
+<body>
+	
+	<div id="container"><!--general wrapper div that should wrap round everything-->
+		
+	</div><!--end of the #container-->
+	
+	<!--
+		super COOL loading of jQuery
+		Firstly from the Google CDN.
+		But if that fails, we include the local version.
+		BULLET PROOF!
+		Taken from HTML5 Boilerplate, thanks to Paul Irish (paulirish.com)
+	-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+	<script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.2.min.js'>\x3C/script>")</script>
+	
+	<!--load in formalize, must be after jQuery-->
+	<script src="lib/js/jquery.formalize.js"></script>
+	
+	<!--PNG fix for IE6. If not supporting IE6, get rid!-->
+	<!--[if lt IE 7 ]>
+    	<script src="js/libs/dd_belatedpng.js"></script>
+	    <script>DD_belatedPNG.fix("img, .png-bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+	<!--extended-selectors adds support for more CSS3 to jQuery, which can then be used
+	by selectivizr-->
+	<!--[if (gte IE 6)&(lte IE 8)]>	  
+	  <script type="text/javascript" src="lib/js/jquery-extended-selectors.js"></script>
+	  <script type="text/javascript" src="lib/js/selectivizr.js"></script>
+	<![endif]-->
+	
+	<!--
+		script to detect support for HTML 5 placeholders, and to emulate the functionality in browsers than don't support it. If you're not using HTML 5 placeholders, no need for this!
+	-->
+	<script src="lib/js/placeholder-fix.js"></script>
+	
+	<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+	<script>
+		var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+		s.parentNode.insertBefore(g,s)}(document,"script"));
+	</script>
+</body>
+
+</html>
+	
+	
+  
