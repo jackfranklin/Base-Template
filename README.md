@@ -4,8 +4,8 @@ This is the template I copy & paste when starting a new web project.
 ##Credits
 I've taken ideas from the HTML5 Boilerplate project & froma number of blogs & sources. Most of these are credited in the comments of the files itself.
 
-##Disclaimer
-I wrote this for me to use, if you want to to, that's cool! 
+##Disclaimer & License
+I wrote this for me to use, if you want to to, that's cool! It's provided as-is and you can do anything you want with it. Go on...go wild! 
 
 ##How to & what's inside
 
@@ -49,7 +49,7 @@ If you don't want to add that class to all elements with PNG backgrounds, edit t
 
     <script>DD_belatedPNG.fix("img, .png-bg"); // Fix any <img> or .png_bg bg-images.</script>
 
-And as it says in the source, you should read goo.gl/mZiyb
+And as it says in the source, you should read http://goo.gl/mZiyb
 
 You can add new selectors into the .fix() function like so:
 
