@@ -46,8 +46,10 @@ You can do that for .ie6, .ie7 or .ie8.
 A PNG Fix is also in there for IE6. PNGFixes are applied to any images and anything with a class of "png-bg". Just add "png-bg" to elements with PNG backgrounds to fix those too.
 	
 If you don't want to add that class to all elements with PNG backgrounds, edit this line of index.html:
-	
-    	<script>DD_belatedPNG.fix("img, .png-bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+
+    <script>DD_belatedPNG.fix("img, .png-bg"); // Fix any <img> or .png_bg bg-images.</script>
+
+And as it says in the source, you should read goo.gl/mZiyb
 
 You can add new selectors into the .fix() function like so:
 
